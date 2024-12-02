@@ -1,0 +1,22 @@
+[project]
+name = "personality-prediction-using-twitter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "contractions>=0.1.73",
+    "fastapi>=0.115.5",
+    "matplotlib>=3.9.3",
+    "nltk>=3.9.1",
+    "numpy>=2.0.2",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.5.2",
+    "scipy>=1.13.1",
+    "seaborn>=0.13.2",
+    "snscrape>=0.7.0.20230622",
+    "uvicorn>=0.32.1",
+    "werkzeug>=3.1.3",
+    "wordcloud>=1.9.4",
+    "xgboost>=2.1.3",
+]
