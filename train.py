@@ -1,4 +1,3 @@
-
 # %
 import pandas as pd
 import numpy as np
@@ -311,7 +310,8 @@ training_data.head(5)
 # %%
 def make_dummies(data, columns=["E-I", "N-S", "F-T", "J-P"]):
     for column in columns:
-        temp_dummy = pd.get_dummies(data[column], prefix="type")
+        # Add a unique suffix for each column to prevent overlap
+        temp_dummy = pd.get_dummies(data[column], prefix=f"type_{column}")
         data = data.join(temp_dummy)
     return data
 
