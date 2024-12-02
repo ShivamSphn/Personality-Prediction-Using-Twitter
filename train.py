@@ -1,38 +1,5 @@
-# %%
 
-
-# %%
-from google.colab import drive
-drive.mount('/content/drive')
-
-# %%
-ROOT = "/content/drive/MyDrive/myers-briggs-tweet-classification-main/"
-DATA = ROOT+'dataset/mb_data.csv'
-MODEL = ROOT+'saved-models/'
-
-# %% [markdown]
-# # Myers-Briggs Personality Classification with ML algorithms
-
-# %% [markdown]
-# #### This notebook includes following steps:
-# * Exploratory Data Analysis
-# * Data Cleaning
-# * Data Preprocessing
-# * Model Creation
-# * Model Training
-# * Model Evaluation and Selection
-# 
-
-# %% [markdown]
-# ### Importing Libraries
-
-# %%
-!pip install contractions
-
-# %%
-!pip install nltk==3.6.2
-
-# %%
+# %
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -54,8 +21,8 @@ from nltk import ngrams
 # %% [markdown]
 # ### Load Dataset
 
-# %%
-data = pd.read_csv(ROOT+"dataset/mb_data.csv")
+ROOT = "./"
+data = pd.read_csv("dataset/mb_data.csv")
 data.head()
 
 # %% [markdown]
